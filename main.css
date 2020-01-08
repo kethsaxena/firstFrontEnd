@@ -1,0 +1,102 @@
+*{box-sizing:border-box}
+
+
+    
+.card {
+    min-width: 300px;
+    min-height: 600px;
+    border: 3px solid #1bc0f2;
+    border-radius: 15px;
+
+    }
+
+p{
+    text-align: center;
+
+}
+
+#pbutton {
+    text-align: center;
+    padding: 300px 0;
+}
+
+#q{
+    display: inline-flex;
+    min-width: 500px;
+    min-height: 250px;
+    background-color: #1bc0f2 ;
+    border: 3px solid #1bc0f2;
+    border-radius: 15px;
+    margin-left: 300px;
+    margin-top: 100px;
+}
+
+#a{
+    display: inline-flex;
+    min-width: 300px;
+    min-height: 250px;
+    background-color: grey ;
+    border: 3px solid black;
+    border-radius: 15px;
+    justify-content: center;
+
+}
+
+#controls{
+    display: flex;
+    max-width: 300px;
+    min-height: 50px;
+    background-color: yellow ;
+    border: 3px solid black;
+    border-radius: 10px;
+    margin-left: 1100px;
+}
+
+
+
+#rq{
+    display: inline-flex;
+    min-width: 500px;
+    min-height: 250px;
+    background-color: #1bc0f2 ;
+    border: 3px solid #1bc0f2;
+    border-radius: 15px;
+    margin-left: 300px;
+    margin-top: 100px;
+}
+
+#ra{
+    display: inline-flex;
+    min-width: 300px;
+    min-height: 250px;
+    background-color: grey ;
+    border: 3px solid black;
+    border-radius: 15px;
+    justify-content: center;
+
+}
+
+#rd{
+    display: flex;
+    max-width: 800px;
+    min-height: 250px;
+    background-color: white ;
+    border: 3px solid yellow;
+    border-radius: 10px;
+    justify-content: center;
+    margin-left: 300px;
+    margin-bottom: 100px;
+
+
+}
+
+#tryAgain{
+    display: flex;
+    max-width: 300px;
+    min-height: 50px;
+    background-color: grey ;
+    border: 3px solid black;
+    border-radius: 10px;
+    margin-left: 600px;
+    justify-content: center;
+}
