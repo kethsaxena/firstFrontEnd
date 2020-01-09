@@ -83,3 +83,24 @@ img{
 }
 
 #banner,p{display: inline}
+
+
+
+button{
+    display: flex;
+    max-width: 300px;
+    min-height: 50px;
+    background-color: grey ;
+    border: 3px solid black;
+    border-radius: 10px;
+    margin-left: 700px;
+    color: white;
+    justify-content: center;
+}
+
+.card button{
+    margin-top: 200px;
+}
+
+.card,p{text-align: center;}
+
