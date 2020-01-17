@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <title>US Presidential Quiz</title>
+  <meta name="description" type="A quiz app about US Presidents.">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- <link rel="shortcut icon" href="#">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">-->
+
+  <link href="https://fonts.googleapis.com/css?family=Baskervville&display=swap" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="index.css" />
+</head>
+
+<body>
+  <main role="main" class="container">
+
+    <header role="banner" class="header">
+        <a href="index.html">   
+        <h1>U.S. PRESIDENTIAL QUIZ</h1>
+        </a>
+        <ul>
+          <li class="sizeMe">Question:<span class="questionNumber">&nbsp;0&nbsp;</span>/&nbsp;10</li>
+          <br>
+          <li class="sizeMe">Score:
+            <span class="score">0</span>
+          </li>
+        </ul>
+    </header>
+   
+
+    <section role="region" class="jungleBox">
+      <section class="startQuiz box">
+        <button class=startButton type="submit">Play</button>
+      </section>
+      
+      <section class="questionBox box altBox">
+      </section>
+      
+      <section class="response box altBox"></section>
+      
+      <section class="final box altBox"></section>
+    </section>
+  </main>
+
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    crossorigin="anonymous"></script>
+  <script src="index.js"></script>
+</body>
+
+</html>

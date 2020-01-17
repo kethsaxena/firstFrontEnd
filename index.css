@@ -1,0 +1,55 @@
+*{box-sizing:border-box}
+ul{
+  list-style: none;
+  
+}
+li{
+  display: inline;
+  font-family: 'Baskervville', serif;
+  text-align: center ;
+  font-size: large;
+
+
+}
+
+.container{
+  min-height: 600px;
+  display: flex;
+  flex-direction: column;
+  border: 3px solid #1bc0f2;
+  border-radius: 15px;
+
+}
+
+a:link {
+  text-decoration: none;
+}
+
+h1{
+  font-family: 'Baskervville', serif;
+  border: solid 1px #000;
+  width: 450px;
+  height: 35px;
+  border-bottom-left-radius:10px ;
+  border-bottom-right-radius:10px ;
+  background-color: #f7e411;
+  color:black;
+    
+}
+.startButton {
+    background-color:white; 
+    width: 500px;
+    height: 200px;
+    border: solid 1px #000;
+    border-radius: 5px;
+    margin-left: 500px;
+    font-family: 'Baskervville', serif;
+    font-size: xx-large;
+    
+  }
+
+  .startButton:hover{
+    background-color:greenyellow;
+
+  }
+
