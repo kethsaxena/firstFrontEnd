@@ -166,9 +166,8 @@ function correctAnswer() {
 function wrongAnswer() {
   $('.response').html(
     `<h3>That's the wrong answer...</h3>
-    <img src="images/wrong.jpg" alt="dissapointed monkey face" class="images" width="200px">
     <p class="sizeMe">It's actually:</p>
-    <p class="sizeMe">${data[questionNumber].correctAnswer}</p>
+    <p class="sizeMe">${data[questionNumber].a}</p>
     <button type="button" class="nextButton button">Next</button>`
   );
 }
