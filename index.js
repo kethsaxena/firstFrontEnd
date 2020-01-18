@@ -68,7 +68,7 @@ let score = 0;
 let questionNumber = 0;
 
 //template to generate each question
-function generateQuestion() {
+function genQ() {
   if (questionNumber < data.length) {
     return createThing(questionNumber);
   } else {
@@ -102,13 +102,13 @@ function resetStats() {
 }
 
 //begins the quiz
-function startQuiz() {
+function start() {
   $('.altBox').hide();
   $('.startQuiz').on('click', '.startButton', function (event) {
     $('.startQuiz').hide();
     $('.questionNumber').text(1);
     $('.questionBox').show();
-    $('.questionBox').prepend(generateQuestion());
+    $('.questionBox').prepend(genQ());
   });
 }
 
@@ -178,7 +178,7 @@ function nextQuestion() {
     $('.altBox').hide();
     $('.questionBox').show();
     updateQuestionNumber();
-    $('.questionBox form').replaceWith(generateQuestion());
+    $('.questionBox form').replaceWith(genQ());
   });
 }
 
@@ -225,7 +225,7 @@ function finalScore() {
 }
 
 //takes user back to the starting view to restart the quiz
-function restartQuiz() {
+function restart() {
   $('.jungleBox').on('click', '.restartButton', function (event) {
     event.preventDefault();
     resetStats();
@@ -236,11 +236,11 @@ function restartQuiz() {
 
 //runs the functions
 function makeQuiz() {
-  startQuiz();
-  generateQuestion();
+  start();
+  genQ();
   submitAnswer();
   nextQuestion();
-  restartQuiz();
+  restart();
 }
 
 $(makeQuiz);
