@@ -44,7 +44,7 @@ var data =[
         and to retire from the office after four years.\
          When he left office, his campaign promises had all been fulfilled.'},
     {
-        q:'Who was the first president to have a Christmas tee in the White house?',
+        q:'Who was the first president to have a Christmas tree in the White house?',
         o:['Bill Clinton','Franklin Roosavelt', 'Franklin Pierce',"George H Bush"],
         a:'Franklin Pierce',
         d:''},
@@ -147,7 +147,7 @@ function createThing(questionIndex) {
       </label>
       `).appendTo(fieldSelector);
   });
-  $(`<button type="submit" class="submitButton button"> Submit</button > `).appendTo(fieldSelector);
+  $(`<br><br><button type="submit" class="submitButton button"> Submit</button > `).appendTo(fieldSelector);
   return formMaker;
 }
 
@@ -188,21 +188,21 @@ function finalScore() {
 
   const great = [
     'Great job!',
-    'images/win.jpg',
-    'cheering monkey',
+    'Acceptable, but do not get over confident',
+    'Please, keep up the American dream',
     'You sure know a lot about US History!'
   ];
 
   const good = [
     'Good, not great.',
-    'images/read.jpg',
-    'monkey reading a book',
+    'You are not the perfect American, but don\'t give up!',
+    'Try again',
     'You should keep studying or lose american citizenship...'
   ];
 
   const bad = [
-    'Do you even know what monkeys look like?',
-    'images/end.png',
+    'You are probably the most unamerican person ever!?',
+    'The entire country and mankind is disapointed in you!',
     'go clean ur ass!',
     'then study hard?'
   ];
@@ -216,7 +216,8 @@ function finalScore() {
   }
   return $('.final').html(
     `<h3>${array[0]}</h3>
-      <img src="${array[1]}" alt="${array[2]}" class="images">
+    <p class="sizeMe">${array[1]}</p>
+    <p class="sizeMe">${array[2]}</p>
         <h3>Your score is ${score} / 10</h3>
         <p class="sizeMe">${array[3]}</p>
         <button type="submit" class="restartButton button">Restart</button>`

@@ -13,13 +13,30 @@ li{
 }
 
 .container{
-  min-height: 600px;
+  min-height: 300px;
+  max-width: 600px;
   display: flex;
   flex-direction: column;
   border: 3px solid #1bc0f2;
   border-radius: 15px;
 
 }
+
+
+.questionText {
+  background-color: #1bc0f2 ;
+  border: 2px solid black;
+  border-radius: 10px;
+  color:black;
+
+  }
+
+fieldset{
+  background-color: #d1e5e8;
+  border-radius: 10px;
+  max-width: 600px;
+}
+
 
 a:link {
   text-decoration: none;
@@ -38,11 +55,11 @@ h1{
 }
 .startButton {
     background-color:white; 
-    width: 500px;
-    height: 200px;
+    width: 400px;
+    height: 100px;
     border: solid 1px #000;
     border-radius: 5px;
-    margin-left: 500px;
+    margin-left: 75px;
     font-family: 'Baskervville', serif;
     font-size: xx-large;
     
