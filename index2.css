@@ -49,3 +49,20 @@ header{
   }
 
   
+fieldset{
+    background-color: #d1e5e8;
+    border-radius: 10px;
+    max-width: 600px;
+  }
+
+  .questionText {
+    background-color: #1bc0f2 ;
+    border: 2px solid black;
+    border-radius: 10px;
+    color:black;
+  
+    }
+  
+  
+
+  
